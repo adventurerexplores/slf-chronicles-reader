@@ -212,7 +212,99 @@
     color: #27180c;
 }
 
+/* Rich Treasury Theme */
+[data-theme="treasury"] {
+    --bg-primary: #150b05;
+    --bg-secondary: rgba(30, 16, 8, 0.85);
+    --bg-tertiary: #2a150a;
+    --accent-cyan: #ffd700;
+    --accent-purple: #b22222;
+    --accent-gold: #c5a059;
+    --text-primary: #fff1d4;
+    --text-secondary: #e6c28c;
+    --text-muted: #8e724a;
+    --border-color: rgba(255, 215, 0, 0.12);
+    --shadow-neon: 0 0 18px rgba(255, 215, 0, 0.18);
+}
+[data-theme="treasury"] .callout {
+    background-color: #1e1108;
+    border-color: #ffd700;
+}
+[data-theme="treasury"] .callout-header {
+    color: #ffd700 !important;
+}
+
+/* Sleek Sci-Fi Theme */
+[data-theme="scifi"] {
+    --bg-primary: #060b13;
+    --bg-secondary: rgba(10, 20, 36, 0.8);
+    --bg-tertiary: #122135;
+    --accent-cyan: #00ffcc;
+    --accent-purple: #ff007f;
+    --accent-gold: #00d2ff;
+    --text-primary: #e0f7fc;
+    --text-secondary: #88d8e6;
+    --text-muted: #4a7888;
+    --border-color: rgba(0, 255, 204, 0.15);
+    --shadow-neon: 0 0 20px rgba(0, 255, 204, 0.25);
+}
+[data-theme="scifi"] .callout {
+    background-color: #0b1420;
+    border-color: #00ffcc;
+}
+[data-theme="scifi"] .callout-header {
+    color: #00ffcc !important;
+}
+
+/* Cute Emul Theme */
+[data-theme="emul"] {
+    --bg-primary: #fff3f5;
+    --bg-secondary: rgba(255, 240, 243, 0.95);
+    --bg-tertiary: #ffe5ec;
+    --accent-cyan: #ff758f;
+    --accent-purple: #b5179e;
+    --accent-gold: #f7a072;
+    --text-primary: #49363b;
+    --text-secondary: #7a5c63;
+    --text-muted: #a6808c;
+    --border-color: rgba(255, 117, 143, 0.25);
+    --shadow-neon: 0 4px 15px rgba(255, 117, 143, 0.2);
+}
+[data-theme="emul"] .callout {
+    background-color: #fff0f3;
+    border-color: #ff758f;
+}
+[data-theme="emul"] .callout-header {
+    color: #ff758f !important;
+}
+[data-theme="emul"] .callout-content {
+    color: #49363b;
+}
+
+/* Solidified Fire Theme */
+[data-theme="solidfire"] {
+    --bg-primary: #0b0502;
+    --bg-secondary: rgba(22, 10, 5, 0.88);
+    --bg-tertiary: #281206;
+    --accent-cyan: #ff5500;
+    --accent-purple: #ff9900;
+    --accent-gold: #ff3300;
+    --text-primary: #ffebd6;
+    --text-secondary: #dca885;
+    --text-muted: #8a5e43;
+    --border-color: rgba(255, 85, 0, 0.2);
+    --shadow-neon: 0 0 22px rgba(255, 85, 0, 0.3);
+}
+[data-theme="solidfire"] .callout {
+    background-color: #160a04;
+    border-color: #ff5500;
+}
+[data-theme="solidfire"] .callout-header {
+    color: #ff5500 !important;
+}
+
 /* General Resets */
+
 * {
     box-sizing: border-box;
     margin: 0;
