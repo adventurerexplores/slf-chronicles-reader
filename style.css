@@ -6,13 +6,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap');
 
 :root {
-    /* Color Palette: Lycaon's Shadow Theme (Default) */
+    /* Color Palette: Lycagon's Shadow Theme (Default) */
     --bg-primary: #050814; /* Deep Twilight Midnight */
     --bg-secondary: rgba(11, 16, 36, 0.75);
     --bg-tertiary: #141b38; /* Cold Lunar Shadow */
     --accent-cyan: #cbd5e1; /* Silver Moonlight */
     --accent-purple: #8b5cf6; /* Lunar Violet Shadow */
-    --accent-gold: #ff3333; /* Lycaon's Glowing Crimson Eyes */
+    --accent-gold: #ff3333; /* Lycagon's Glowing Crimson Eyes */
     --text-primary: #ecf2fe; /* Luminous Cool Moonlight */
     --text-secondary: #b4c6e7; /* Soft Moonlit Silver-Blue */
     --text-muted: #627d98; /* Deep Lunar Shadow Slate */
@@ -268,9 +268,9 @@
     --accent-cyan: #ff758f;
     --accent-purple: #b5179e;
     --accent-gold: #f7a072;
-    --text-primary: #49363b;
-    --text-secondary: #7a5c63;
-    --text-muted: #a6808c;
+    --text-primary: #3b282c;
+    --text-secondary: #563d42;
+    --text-muted: #806268;
     --border-color: rgba(255, 117, 143, 0.25);
     --shadow-neon: 0 4px 15px rgba(255, 117, 143, 0.2);
 }
@@ -593,6 +593,14 @@ header {
     background-color: var(--accent-cyan);
     color: var(--bg-primary) !important;
     border-color: var(--accent-cyan);
+}
+
+/* Ensure active theme buttons are perfectly readable and never whitewashed in light themes */
+[data-theme="light"] .theme-opt.active,
+[data-theme="boardgame"] .theme-opt.active,
+[data-theme="emul"] .theme-opt.active {
+    color: #ffffff !important;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
 }
 
 /* Text adjust buttons */
@@ -1095,6 +1103,11 @@ main {
     color: #000000 !important;
     font-weight: 700 !important;
 }
+[data-theme="scifi"] .theme-opt.active {
+    background-color: #000000 !important;
+    color: #ffffff !important;
+    border-color: #000000 !important;
+}
 [data-theme="scifi"] .nav-btn:hover:not(:disabled), [data-theme="scifi"] select:hover, [data-theme="scifi"] select:focus, [data-theme="scifi"] .settings-toggle-btn:hover {
     background-color: #f1f5f9 !important;
     border-color: #0066cc !important;
@@ -1170,6 +1183,12 @@ main {
     background-color: #ffffff !important;
     border: 1px solid rgba(14, 165, 233, 0.3) !important;
     color: #0369a1 !important;
+}
+[data-theme="sky"] .theme-opt.active {
+    background: linear-gradient(135deg, #0ea5e9, #38bdf8) !important;
+    color: #ffffff !important;
+    border: none !important;
+    box-shadow: 0 4px 10px rgba(14, 165, 233, 0.25) !important;
 }
 [data-theme="sky"] .accent-btn {
     background: linear-gradient(135deg, #0ea5e9, #38bdf8) !important;
