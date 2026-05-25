@@ -1258,3 +1258,20 @@ main {
     color: #0369a1 !important;
 }
 
+/* Vorpal Fluff Theme Layout Overrides: Ultra-soft, pillowy, extremely rounded oval shapes for buttons and controls */
+[data-theme="emul"] select, 
+[data-theme="emul"] button, 
+[data-theme="emul"] .nav-btn, 
+[data-theme="emul"] .settings-toggle-btn,
+[data-theme="emul"] .theme-opt,
+[data-theme="emul"] .btn-opt {
+    border-radius: 9999px !important; /* Perfect oval/pill shapes! */
+    border-width: 2px !important;
+}
+[data-theme="emul"] .speaker-tag {
+    border-radius: 9999px !important; /* Pill-shaped speaker tags */
+    padding: 0.25rem 0.85rem !important;
+}
+[data-theme="emul"] .callout {
+    border-radius: 24px !important; /* Extremely soft, deeply rounded card containers */
+}
