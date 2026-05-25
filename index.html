@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shangri-La Frontier — Polished Chronicles</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Marked.js Markdown Parser Library -->
+    <script src="marked.min.js"></script>
+    <!-- Compiled Chapters Data Object -->
+    <script src="chapters_data.js"></script>
+</head>
+<body data-theme="dark">
+    <!-- Reading Progress Tracker -->
+    <div id="progress-bar"></div>
+
+    <!-- Background Atmospheric Ambient Glowing Objects -->
+    <div class="ambient-glow glow-left"></div>
+    <div class="ambient-glow glow-right"></div>
+
+    <!-- Sticky Navigation Top Control Header -->
+    <header>
+        <div class="header-container">
+            <a href="#" class="logo">
+                <span>SHANFRO</span> CHRONICLES
+            </a>
+            
+            <div class="controls-group">
+                <!-- Previous Button -->
+                <button id="prev-btn" class="nav-btn" aria-label="Previous Chapter" disabled>
+                    ◀ Prev
+                </button>
+                
+                <!-- Interactive Dropdown List Selection -->
+                <div class="select-wrapper">
+                    <select id="chapter-select" aria-label="Select Chapter">
+                        <!-- Populated dynamically via JS -->
+                        <option>Loading Chapters...</option>
+                    </select>
+                </div>
+                
+                <!-- Next Button -->
+                <button id="next-btn" class="nav-btn accent-btn" aria-label="Next Chapter" disabled>
+                    Next ▶
+                </button>
+
+                <!-- Floating Settings Customizer Button -->
+                <button id="settings-toggle" class="settings-toggle-btn" aria-label="Reader Settings">
+                    ⚙️
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Settings Overlay Drawer Panel -->
+    <div id="settings-panel" class="settings-panel">
+        <div class="settings-title">Reader Interface Options</div>
+        
+        <!-- Theme Selection Picker -->
+        <div class="setting-row">
+            <span class="setting-label">Visual Interface Theme</span>
+            <div class="theme-picker">
+                <button class="theme-opt active" data-val="dark">Lycaon's Shadow</button>
+                <button class="theme-opt" data-val="pureblack">Abyssal Dark</button>
+                <button class="theme-opt" data-val="light">Vorpal Light</button>
+                <button class="theme-opt" data-val="boardgame">Library Archives</button>
+                <button class="theme-opt" data-val="volcano">Volcanic Red</button>
+                <button class="theme-opt" data-val="oasis">Forest Oasis</button>
+            </div>
+        </div>
+        
+        <!-- Typography Font Selector -->
+        <div class="setting-row">
+            <span class="setting-label">Font Family</span>
+            <div class="btn-group">
+                <button class="btn-opt font-opt active" data-val="sans">Clean Sans</button>
+                <button class="btn-opt font-opt" data-val="serif">Premium Serif</button>
+            </div>
+        </div>
+        
+        <!-- Text Size Scaling -->
+        <div class="setting-row">
+            <span class="setting-label">Text Sizing</span>
+            <div class="btn-group">
+                <button class="btn-opt size-opt" data-val="sm">Small</button>
+                <button class="btn-opt size-opt active" data-val="md">Medium</button>
+                <button class="btn-opt size-opt" data-val="lg">Large</button>
+            </div>
+        </div>
+        
+        <!-- Line-Spacing Scale -->
+        <div class="setting-row">
+            <span class="setting-label">Line Spacing</span>
+            <div class="btn-group">
+                <button class="btn-opt spacing-opt" data-val="sm">Compact</button>
+                <button class="btn-opt spacing-opt active" data-val="md">Optimal</button>
+                <button class="btn-opt spacing-opt" data-val="lg">Relaxed</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Reading Viewport -->
+    <main>
+        <!-- The Dynamic Content Wrapper -->
+        <div id="reader-container" class="body-font-sans size-md spacing-md">
+            <!-- Populated dynamically via JS -->
+            <div style="text-align: center; padding: 5rem 0;">
+                <h2 style="font-family: 'Outfit', sans-serif;">Initializing Reader...</h2>
+                <p>Loading polished Shangri-La Frontier logs.</p>
+            </div>
+        </div>
+
+        <!-- Secondary Bottom Pager Navigation -->
+        <div class="bottom-nav">
+            <button id="prev-bottom-btn" class="nav-btn" disabled>
+                ◀ Previous Chapter
+            </button>
+            <button id="next-bottom-btn" class="nav-btn accent-btn" disabled>
+                Next Chapter ▶
+            </button>
+        </div>
+    </main>
+
+    <!-- Scroll-to-Top Floating Widget -->
+    <button id="scroll-top-btn" aria-label="Back to Top">
+        ▲
+    </button>
+
+    <script src="app.js"></script>
+</body>
+</html>
