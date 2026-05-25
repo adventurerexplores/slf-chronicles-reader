@@ -275,14 +275,47 @@
     --shadow-neon: 0 4px 15px rgba(255, 117, 143, 0.2);
 }
 [data-theme="emul"] .callout {
+    box-shadow: 0 4px 15px rgba(255, 117, 143, 0.05);
     background-color: #fff0f3;
     border-color: #ff758f;
 }
-[data-theme="emul"] .callout-header {
-    color: #ff758f !important;
+[data-theme="emul"] .callout.note {
+    background-color: #f0f7ff;
+    border-left: 4px solid #75aaff;
+}
+[data-theme="emul"] .callout.note .callout-header {
+    color: #3b75c6 !important;
+}
+[data-theme="emul"] .callout.tip {
+    background-color: #f2faf0;
+    border-left: 4px solid #82c876;
+}
+[data-theme="emul"] .callout.tip .callout-header {
+    color: #458a38 !important;
+}
+[data-theme="emul"] .callout.important {
+    background-color: #fff0f8;
+    border-left: 4px solid #ff75bd;
+}
+[data-theme="emul"] .callout.important .callout-header {
+    color: #c63b84 !important;
+}
+[data-theme="emul"] .callout.warning {
+    background-color: #fffbf0;
+    border-left: 4px solid #f7a072;
+}
+[data-theme="emul"] .callout.warning .callout-header {
+    color: #c66530 !important;
+}
+[data-theme="emul"] .callout.caution {
+    background-color: #fff5f5;
+    border-left: 4px solid #ff7575;
+}
+[data-theme="emul"] .callout.caution .callout-header {
+    color: #d63b3b !important;
 }
 [data-theme="emul"] .callout-content {
-    color: #49363b;
+    color: #563d42;
 }
 
 /* Sunny Skies Theme - Warm Blue Skies and Fluffy White Clouds */
