@@ -212,7 +212,7 @@
     color: #27180c;
 }
 
-/* Rich Treasury Theme */
+/* Golden Vault Theme */
 [data-theme="treasury"] {
     --bg-primary: #150b05;
     --bg-secondary: rgba(30, 16, 8, 0.85);
@@ -234,29 +234,33 @@
     color: #ffd700 !important;
 }
 
-/* Sleek Sci-Fi Theme */
+/* Sterile Lab Theme - Clean White-Lit Research Laboratory */
 [data-theme="scifi"] {
-    --bg-primary: #060b13;
-    --bg-secondary: rgba(10, 20, 36, 0.8);
-    --bg-tertiary: #122135;
-    --accent-cyan: #00ffcc;
-    --accent-purple: #ff007f;
-    --accent-gold: #00d2ff;
-    --text-primary: #e0f7fc;
-    --text-secondary: #88d8e6;
-    --text-muted: #4a7888;
-    --border-color: rgba(0, 255, 204, 0.15);
-    --shadow-neon: 0 0 20px rgba(0, 255, 204, 0.25);
+    --bg-primary: #ffffff;
+    --bg-secondary: rgba(240, 245, 250, 0.95);
+    --bg-tertiary: #e2eafd;
+    --accent-cyan: #0066cc;
+    --accent-purple: #5c7080;
+    --accent-gold: #e28743;
+    --text-primary: #0f172a;
+    --text-secondary: #334155;
+    --text-muted: #64748b;
+    --border-color: rgba(0, 102, 204, 0.15);
+    --shadow-neon: 0 4px 20px rgba(0, 102, 204, 0.08);
 }
 [data-theme="scifi"] .callout {
-    background-color: #0b1420;
-    border-color: #00ffcc;
+    background-color: #ffffff;
+    border-color: #0066cc;
+    box-shadow: 0 4px 15px rgba(0, 102, 204, 0.05);
 }
 [data-theme="scifi"] .callout-header {
-    color: #00ffcc !important;
+    color: #0066cc !important;
+}
+[data-theme="scifi"] .callout-content {
+    color: #334155;
 }
 
-/* Cute Emul Theme */
+/* Vorpal Fluff Theme - Fluffy Bunny Soft Ribbons & Carrots */
 [data-theme="emul"] {
     --bg-primary: #fff3f5;
     --bg-secondary: rgba(255, 240, 243, 0.95);
@@ -281,26 +285,30 @@
     color: #49363b;
 }
 
-/* Solidified Fire Theme */
-[data-theme="solidfire"] {
-    --bg-primary: #0b0502;
-    --bg-secondary: rgba(22, 10, 5, 0.88);
-    --bg-tertiary: #281206;
-    --accent-cyan: #ff5500;
-    --accent-purple: #ff9900;
-    --accent-gold: #ff3300;
-    --text-primary: #ffebd6;
-    --text-secondary: #dca885;
-    --text-muted: #8a5e43;
-    --border-color: rgba(255, 85, 0, 0.2);
-    --shadow-neon: 0 0 22px rgba(255, 85, 0, 0.3);
+/* Sunny Skies Theme - Warm Blue Skies and Fluffy White Clouds */
+[data-theme="sky"] {
+    --bg-primary: #edf7ff;
+    --bg-secondary: rgba(255, 255, 255, 0.94);
+    --bg-tertiary: #d3ebff;
+    --accent-cyan: #0ea5e9;
+    --accent-purple: #38bdf8;
+    --accent-gold: #f59e0b;
+    --text-primary: #0a2e5c;
+    --text-secondary: #1b4e85;
+    --text-muted: #4b7ea8;
+    --border-color: rgba(14, 165, 233, 0.15);
+    --shadow-neon: 0 4px 20px rgba(14, 165, 233, 0.12);
 }
-[data-theme="solidfire"] .callout {
-    background-color: #160a04;
-    border-color: #ff5500;
+[data-theme="sky"] .callout {
+    background-color: #ffffff;
+    border-color: #0ea5e9;
+    box-shadow: 0 4px 15px rgba(14, 165, 233, 0.06);
 }
-[data-theme="solidfire"] .callout-header {
-    color: #ff5500 !important;
+[data-theme="sky"] .callout-header {
+    color: #0ea5e9 !important;
+}
+[data-theme="sky"] .callout-content {
+    color: #1b4e85;
 }
 
 /* General Resets */
