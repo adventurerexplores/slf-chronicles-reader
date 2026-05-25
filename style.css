@@ -1067,3 +1067,142 @@ main {
     color: #ff3d00 !important; /* Menacing Tombguard Orange-Red */
 }
 
+/* ==========================================================================
+   THEME SPECIFIC INTERFACE OVERRIDES
+   ========================================================================== */
+
+/* sterile lab layout overrides: crisp lines, pure white, graph grid, zero border radius, clinical black borders */
+[data-theme="scifi"] {
+    --transition-smooth: none !important; /* Instant transitions, no soft smooth fading! */
+}
+[data-theme="scifi"] body {
+    background-color: #ffffff !important;
+    background-image: radial-gradient(#cbd5e1 1px, transparent 1px) !important;
+    background-size: 24px 24px !important; /* Clinical engineering grid */
+}
+[data-theme="scifi"] * {
+    border-radius: 0px !important; /* Zero roundness! Absolute clinical crispness! */
+    box-shadow: none !important; /* Remove all soft ambient drop-shadows */
+}
+[data-theme="scifi"] header {
+    background-color: #ffffff !important;
+    border-bottom: 2px solid #000000 !important;
+    box-shadow: none !important;
+}
+[data-theme="scifi"] select, [data-theme="scifi"] button, [data-theme="scifi"] .nav-btn, [data-theme="scifi"] .settings-toggle-btn {
+    border: 2px solid #000000 !important;
+    background-color: #ffffff !important;
+    color: #000000 !important;
+    font-weight: 700 !important;
+}
+[data-theme="scifi"] .nav-btn:hover:not(:disabled), [data-theme="scifi"] select:hover, [data-theme="scifi"] select:focus, [data-theme="scifi"] .settings-toggle-btn:hover {
+    background-color: #f1f5f9 !important;
+    border-color: #0066cc !important;
+    color: #0066cc !important;
+}
+[data-theme="scifi"] .accent-btn {
+    background: #0066cc !important;
+    color: #ffffff !important;
+}
+[data-theme="scifi"] .accent-btn:hover:not(:disabled) {
+    background: #0052a3 !important;
+}
+[data-theme="scifi"] #reader-container h1, 
+[data-theme="scifi"] #reader-container h2, 
+[data-theme="scifi"] #reader-container h3 {
+    background: none !important;
+    -webkit-text-fill-color: initial !important;
+    color: #000000 !important;
+    text-shadow: none !important;
+    font-weight: 800 !important;
+    letter-spacing: 0px !important;
+}
+[data-theme="scifi"] #reader-container h2::before {
+    content: '■' !important;
+    color: #0066cc !important;
+}
+[data-theme="scifi"] #reader-container p {
+    color: #000000 !important; /* Pitch black high-contrast body text */
+    text-align: left !important; /* Clinical left-aligned text */
+}
+[data-theme="scifi"] #reader-container hr {
+    background: #000000 !important;
+    height: 2px !important;
+    margin: 2rem 0 !important;
+}
+[data-theme="scifi"] .callout {
+    border: 2px solid #000000 !important;
+    background-color: #ffffff !important;
+}
+[data-theme="scifi"] .callout-header {
+    border-bottom: 2px solid #000000 !important;
+    padding-bottom: 0.5rem !important;
+    margin-bottom: 0.75rem !important;
+}
+[data-theme="scifi"] .speaker-tag {
+    background-color: #000000 !important;
+    color: #ffffff !important;
+    border: 1px solid #000000 !important;
+}
+
+/* sunny skies layout overrides: bright light blue background, pure white cumulus cloud reader container */
+[data-theme="sky"] body {
+    background: linear-gradient(180deg, #bae6fd 0%, #7dd3fc 100%) no-repeat fixed !important; /* Sunny Sky Blue background */
+}
+[data-theme="sky"] .ambient-glow {
+    display: none !important; /* Hide glowing objects for authentic sky styling */
+}
+[data-theme="sky"] header {
+    background-color: rgba(255, 255, 255, 0.85) !important;
+    border-bottom: 1px solid rgba(14, 165, 233, 0.2) !important;
+}
+[data-theme="sky"] main {
+    background-color: #ffffff !important; /* Fluffy White Cloud reading panel */
+    border-radius: 28px !important; /* Curvaceous cumulus cloud shapes */
+    border: 6px solid #ffffff !important;
+    box-shadow: 0 15px 45px rgba(3, 105, 161, 0.15) !important; /* Lifted cloud elevation */
+    padding: 3.5rem 2.5rem 6rem 2.5rem !important;
+    margin-top: 3rem !important;
+    margin-bottom: 3rem !important;
+}
+[data-theme="sky"] select, [data-theme="sky"] button, [data-theme="sky"] .nav-btn, [data-theme="sky"] .settings-toggle-btn {
+    border-radius: 20px !important; /* Soft pillowy rounded controls */
+    background-color: #ffffff !important;
+    border: 1px solid rgba(14, 165, 233, 0.3) !important;
+    color: #0369a1 !important;
+}
+[data-theme="sky"] .accent-btn {
+    background: linear-gradient(135deg, #0ea5e9, #38bdf8) !important;
+    color: #ffffff !important;
+    border: none !important;
+}
+[data-theme="sky"] #reader-container h1, 
+[data-theme="sky"] #reader-container h2, 
+[data-theme="sky"] #reader-container h3 {
+    background: none !important;
+    -webkit-text-fill-color: initial !important;
+    color: #0369a1 !important; /* Sunny deep sky blue headers */
+}
+[data-theme="sky"] #reader-container h2::before {
+    content: '☁' !important; /* Cloud symbol prefix! */
+    color: #38bdf8 !important;
+    font-size: 1.4rem !important;
+}
+[data-theme="sky"] #reader-container p {
+    color: #0c4a6e !important; /* Soothing warm deep-sky-navy text */
+}
+[data-theme="sky"] #reader-container hr {
+    background: linear-gradient(to right, transparent, #38bdf8, transparent) !important;
+}
+[data-theme="sky"] .callout {
+    border-radius: 16px !important; /* Rounded cloud callouts */
+    background-color: #f0f9ff !important;
+    border: 1px solid #bae6fd !important;
+    box-shadow: 0 4px 20px rgba(14, 165, 233, 0.08) !important;
+}
+[data-theme="sky"] .speaker-tag {
+    border-radius: 12px !important; /* Soft pillowy speaking tags */
+    background-color: #e0f2fe !important;
+    color: #0369a1 !important;
+}
+
