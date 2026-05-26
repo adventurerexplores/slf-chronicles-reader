@@ -38,7 +38,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // Populate Chapter Select Dropdown
         chapterSelect.innerHTML = CHAPTERS_DATA.map((chap, idx) => `
-            <option value="${idx}">Chapter ${chap.number}: ${chap.title}</option>
+            <option value="${idx}" title="Version: ${chap.version || 'Legacy'}">Chapter ${chap.number}: ${chap.title}</option>
         `).join('');
 
         // Set layout settings from localStorage
@@ -150,6 +150,9 @@ document.addEventListener('DOMContentLoaded', () => {
     function renderChapter(index) {
         const chapter = CHAPTERS_DATA[index];
         if (!chapter) return;
+
+        // Update dropdown title tooltip with active chapter's version
+        chapterSelect.title = `Active Version: ${chapter.version || 'Legacy'}`;
 
         // Save reading progress to localStorage
         localStorage.setItem('slf-last-chapter', chapter.number);
